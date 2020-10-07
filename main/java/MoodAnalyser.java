@@ -10,10 +10,15 @@ public class MoodAnalyser
     }
     public String analyseMood()
     {
-        if (mood.contains("sad"))
-            return "sad";
-        else
+        try {
+            if (mood.contains("sad"))
+                return "sad";
+            else
+                return "happy";
+        }
+        catch (Exception e){
             return "happy";
+        }
     }
 
     public static void main(String[] args) {

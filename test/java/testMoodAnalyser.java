@@ -11,5 +11,8 @@ public class testMoodAnalyser
         MoodAnalyser moodAnalyse2 = new MoodAnalyser("I am in happy mood");
         String msg2 = moodAnalyse2.analyseMood();
         assertEquals("happy",msg2);
+        MoodAnalyser moodAnalyse3 = new MoodAnalyser("I am in  mood");
+        String msg3 = moodAnalyse3.analyseMood();
+        assertEquals("happy",msg3);
     }
 }
