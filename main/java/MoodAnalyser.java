@@ -1,6 +1,15 @@
 public class MoodAnalyser
 {
-    public String analyseMood(String mood) {
+    public String mood;
+    MoodAnalyser()
+    {
+    }
+
+    MoodAnalyser(String mood) {
+        this.mood=mood;
+    }
+    public String analyseMood()
+    {
         if (mood.contains("sad"))
             return "sad";
         else
@@ -8,7 +17,6 @@ public class MoodAnalyser
     }
 
     public static void main(String[] args) {
-        MoodAnalyser moodAnalyser = new MoodAnalyser();
-        System.out.println(moodAnalyser.analyseMood("I am sad"));
+
     }
 }
